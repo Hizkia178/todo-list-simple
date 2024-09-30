@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3D Neumorphic Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <button class="add-task"><i class="fas fa-plus"></i> Add Task</button>
+        </header>
+
+        <div class="task-input">
+            <input type="text" placeholder="What do you need to do?" id="taskInput">
+            <button id="addBtn"><i class="fas fa-check"></i></button>
+        </div>
+
+        <div class="extra-features">
+            <select id="taskCategory">
+                <option value="">Select Category</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Study">Study</option>
+            </select>
+            <input type="datetime-local" id="taskReminder" placeholder="Set Reminder">
+        </div>
+
+        <div class="task-list" id="taskList">
+            <!-- Task items will be added here -->
+        </div>
+
+        <footer>
+            <p>Neumorphic Todo List Application</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
